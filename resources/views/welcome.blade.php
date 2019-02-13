@@ -29,6 +29,10 @@
             <p class="level-item">{{ $article->owner }}</p>
           </div>
 
+          <div class="level">
+            <h6><a href="{{env('base_url')}}/articles/{{$article->id}}/edit">Edit</a></h6>
+          </div>
+
         </div>
       @endforeach
 
