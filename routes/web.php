@@ -14,3 +14,4 @@
 Route::get('/', 'ArticlesController@index');
 Route::get('/articles/{article}/edit', 'ArticlesController@edit');
 Route::delete('/articles/{article}', 'ArticlesController@destroy');
+Route::get('/articles/create', 'ArticlesController@create');
