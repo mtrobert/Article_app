@@ -9,7 +9,7 @@
       </div>
 
       @foreach ($articles as $article)
-        <div class="box" style="margin: auto; width:50%">
+        <div class="box" style="margin: auto; width:50%; margin-bottom: 2em;">
 
           <div class="article-element has-text-centered">
             <p class="has-text-grey-darker title"> {{ $article->title }}</p>
