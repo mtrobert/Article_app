@@ -30,8 +30,19 @@
           </div>
 
           <div class="level">
-            <h6><a href="{{env('base_url')}}/articles/{{$article->id}}/edit">Edit</a></h6>
+            <button class="button level-left"><a href="{{env('base_url')}}articles/{{ $article->id }}/edit">Edit</a></button>
+
+            <form class="level-right" action="{{ env('base_url') }}articles/{{$article->id}}" method="post">
+              @csrf
+              {{ method_field('DELETE') }}
+
+            <div class="control">
+              <button type="submit" class="button has-text-danger">Delete Project</button>
+            </div>
+
+            </form>
           </div>
+
 
         </div>
       @endforeach
