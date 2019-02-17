@@ -38,7 +38,16 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        Article::create($request->validate(
+                            [
+                              'title'    => 'required',
+                              'subtitle' => 'required',
+                              'body'     => 'required|min:10',
+                              'owner'    => 'required'
+                            ]
+        ));
+        return redirect('/');
     }
 
     /**
