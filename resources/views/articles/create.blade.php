@@ -6,7 +6,7 @@
 <section class="section">
 
   <div class="container">
-    <p class="title is fluid has-text-centered has-text-black-ter" style="margin-bottom: 3%; font-size: 325%; ">Create New Article</p>
+    <p class="title is fluid has-text-centered has-text-black-ter" style="margin-bottom: 3%; font-size: 325%; ">Create A New Article</p>
   </div>
 
   <div class="box" style="margin: auto; width:50%; margin-bottom: 2em;">
@@ -42,7 +42,7 @@
 
         <div class="field">
 
-          <button class="button" type="submit">Create Article</button>
+          <button class="button" type="submit">Create An Article</button>
 
         </div>
 
