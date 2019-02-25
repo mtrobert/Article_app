@@ -81,7 +81,16 @@ class ArticlesController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $article = Article::findOrFail($article->id);
+
+        $article->title = $request->title;
+        $article->subtitle = $request->subtitle;
+        $article->body = $request->body;
+        $article->owner = $request->owner;
+
+        $article->save();
+
+        return redirect('/');
     }
 
     /**
